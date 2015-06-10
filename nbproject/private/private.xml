@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="JSF"/>
+        <group name="JSF">
+            <file>file:/home/wagner/NetBeansProjects/ServerSocketFX/src/serversocketfx/Server.java</file>
+            <file>file:/home/wagner/NetBeansProjects/ServerSocketFX/src/serversocketfx/HandlerCLient.java</file>
+            <file>file:/home/wagner/NetBeansProjects/ServerSocketFX/src/serversocketfx/FXMLDocumentController.java</file>
+        </group>
     </open-files>
 </project-private>

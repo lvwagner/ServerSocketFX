@@ -24,29 +24,23 @@ public class FXMLDocumentController implements Initializable {
     private Button btnIniciarServidor;
     @FXML
     private Label lblStatus;
-    @FXML
-    private Button btnPararServidor;
 
+    Thread trd;
     Server serv = new Server();
 
     /**
      * Initializes the controller class.
+     *
      * @param url
      * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        serv.run();
     }
 
     @FXML
     public void iniciarServidor(ActionEvent event) {
-
+        trd = new Thread(serv);
+        trd.start();
     }
-
-    @FXML
-    public void finalizarServidor(ActionEvent event) throws Throwable {
-        serv.socket.close();
-    }
-
 }
