@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="306.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serversocketfx.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnIniciarServidor" layoutX="24.0" layoutY="100.0" mnemonicParsing="false" onAction="#iniciarServidor" prefHeight="49.0" prefWidth="180.0" text="Inicar Servidor" textFill="#13eb08">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="lblStatus" layoutX="78.0" layoutY="29.0" text="Servidor desligado" textFill="#e80e06">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPararServidor" layoutX="220.0" layoutY="101.0" mnemonicParsing="false" onAction="#finalizarServidor" prefHeight="49.0" prefWidth="62.0" text="Parar" textFill="#ee0404" />
+   </children>
+</AnchorPane>
