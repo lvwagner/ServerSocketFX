@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 
 /**
  * FXML Controller class
@@ -42,5 +43,7 @@ public class FXMLDocumentController implements Initializable {
     public void iniciarServidor(ActionEvent event) {
         trd = new Thread(serv);
         trd.start();
+        lblStatus.setText("Servidor Operando...");
+        lblStatus.setTextFill(Color.GREEN);
     }
 }
